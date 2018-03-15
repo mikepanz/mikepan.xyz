@@ -1,0 +1,27 @@
+{
+  "name": "mikepan.xyz",
+  "version": "1.0.0",
+  "description": "mikepan.xyz website",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+  	"start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikepanz/mikepan.xyz.git"
+  },
+  "author": "Mike Pan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikepanz/mikepan.xyz/issues"
+  },
+  "homepage": "https://github.com/mikepanz/mikepan.xyz#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

@@ -7,7 +7,7 @@
     "doc": "doc"
   },
   "scripts": {
-  	"start": "npm run lite",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
@@ -23,5 +23,9 @@
   "homepage": "https://github.com/mikepanz/mikepan.xyz#readme",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "kute.js": "^1.6.5",
+    "particles.js": "^2.0.0"
   }
 }

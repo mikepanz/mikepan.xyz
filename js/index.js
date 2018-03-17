@@ -29,10 +29,10 @@ $("document").ready(function() {
         morphPrecision: 1, // SVG Plugin only
     };
     //morph animation
-    var stroke1 = KUTE.to("#one", { path: "#first" }, {duration: 300});
-    var stroke2 = KUTE.to("#two", { path: "#second" }, {duration: 400});
-    var stroke3 = KUTE.to("#three", { path: "#third" }, {duration: 500});
-    var close1 = KUTE.to("#close", { path: "#x1" }, {duration: 400});
+    var stroke1 = KUTE.to("#one", { path: "#first" }, {duration: 200});
+    var stroke2 = KUTE.to("#two", { path: "#second" }, {duration: 300});
+    var stroke3 = KUTE.to("#three", { path: "#third" }, {duration: 400});
+    var close1 = KUTE.to("#close", { path: "#x1" }, {duration: 300});
 
     var oneString = $("#one").attr("d");
     var twoString = $("#two").attr("d");
@@ -41,13 +41,13 @@ $("document").ready(function() {
     //$("#p").html(oneString);
 
     $("#logo").hover(function() {
-        $("#zero").fadeOut(400);
+        $("#zero").fadeOut(300);
         stroke1.start();
         stroke2.start();
         stroke3.start();
     }, function() {
         if (!open) {
-            $("#zero").fadeIn(400);
+            $("#zero").fadeIn(300);
             $("#close").css("visibility", "hidden");
         }
         //stroke1.reverse();
@@ -76,7 +76,7 @@ $("document").ready(function() {
             //$("#p").html("burger");
             $("#one, #two, #three").fadeIn();
             //close1.reverse();
-            KUTE.to("#close", { path: closeString }, {duration: 400}).start();
+            KUTE.to("#close", { path: closeString }, {duration: 300}).start();
             closeNav();
         }
     });

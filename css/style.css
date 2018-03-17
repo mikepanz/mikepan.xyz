@@ -5,13 +5,14 @@
 }
 svg {
     height: 80px;
-    border: 5px solid black;
     margin: 0 auto;
     display: block;;
     z-index: 2;
     transition: margin-top .5s;
 }
-
+ul, li {
+    list-style-type: none;
+}
 /*hide burger*/
 #x1, #close, #first, #second, #third {
     visibility: hidden;
@@ -70,12 +71,14 @@ nav ul {
     width: 100vw;
     height: 100vh;
 }
+/*paticles.js*/
+
 /*page home*/
 div.home {
     background-color: lightcoral;
 }
 div.profile-img {
-    background: url("../img/pic2.jpg") no-repeat center center;
+    background: url("../img/pic3.jpg") no-repeat center center;
     width: 50vw;
     height: 100vh;
     float: right;
@@ -84,21 +87,47 @@ div.intro {
     float: left;
     height: 100vh;
     width: 50vw;
-    display: inline-block;
 }
-
+.greetings {
+    margin-top: 150px;
+    color: whitesmoke;
+    font: 1em sans-serif;
+    padding: 0 20%;
+    text-align: center;
+}
+.social {
+    display: block;
+    width: inherit;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.social a {
+    font-size: 3vh;
+    margin: 1em;
+}
 /*page about*/
 /*page portfolio*/
 /*page contact*/
 
 /* slick button */
 .slick-prev, .slick-next {
-    border: 5px solid #000000;
-    background: #ffffff;
     width: 80px;
     height: 80px;
     z-index: 2;
     position: fixed;
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
 .slick-prev {
     top: calc(50vh - 40px);
@@ -107,4 +136,7 @@ div.intro {
 .slick-next {
     top: calc(50vh - 40px);
     right: 0;
+}
+.slick-next:hover, .slick-prev:hover {
+    font-size: 75px;
 }

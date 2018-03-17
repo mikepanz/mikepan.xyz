@@ -10,8 +10,8 @@ $("document").ready(function() {
     //navigation
 
     var openNav = function() {
-        $("#js-nav").css("height", "calc(100vh - 80px)");
-        $("#logo").css("margin-top", "calc(100vh - 80px)");
+        $("#js-nav").css("height", "calc(100vh - 6vw)");
+        $("#logo").css("margin-top", "calc(100vh - 6vw)");
     }
 
     var closeNav = function() {

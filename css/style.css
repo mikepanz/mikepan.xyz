@@ -7,6 +7,9 @@
     font-family: 'Ubuntu', sans-serif;
     color: whitesmoke;
 }
+a {
+    text-decoration: none;
+}
 img{
     border-radius: 50%;
 }
@@ -41,7 +44,7 @@ ul, li {
     position: fixed; /* Stay in place */
     z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(120deg, #29323c 0%, #485563 100%);
     overflow: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in the nav */
 }
@@ -82,7 +85,7 @@ nav ul {
 .slide {
     height: 100vh;
     width: 100vw;
-    padding-top: 6vh;
+    padding-top: 8vh;
     background-image: linear-gradient(120deg, #485563 0%, #29323c 100%);
 }
 /*page home*/
@@ -138,10 +141,66 @@ i.fa-envelope:hover {
 }
 .content {
     margin: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 /*page about*/
-div.about {
-    
+div.texts {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+div.brick {
+    display: inline-block;
+    width: 30%;
+    padding-top: 1%;
+}
+div.img {
+    width: 12vw;
+    height: 12vw;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1vw auto;
+}
+/*buttons*/
+a.btn {
+    width: 30px;
+    height: 10px;
+    padding: 1em;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    margin: 0 7px;
+}
+.texts a:hover {
+    opacity: .8;
+    text-decoration: none;
+}
+.texts a, 
+a.btn span:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+a.btn-primary {
+    background-color: whitesmoke;
+    opacity: .8;
+    border: 2px solid whitesmoke;
+}
+.btn-primary span {
+    color: #36404C;
+}
+/*images*/
+#img1 {
+    background-image: url("../img/Pic1.jpg");
+}
+#img2 {
+    background-image: url("../img/Pic2.jpg");
+}
+#img3 {
+    background-image: url("../img/Pic3.jpg");
 }
 /*page portfolio*/
 div.portfolio {

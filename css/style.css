@@ -1,25 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Ubuntu');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+}
+img{
+    border-radius: 50%;
 }
 svg {
-    width: 6vw;
+    height: 8vh;
     margin: 0 auto;
     display: block;;
     z-index: 2;
-    transition: margin-top .5s;
+    transition: .4s;
 }
 div.svg {
     width: 100vw;
-    height: 6vw;
-    background-color: #333;
-    box-shadow: 0 5px 2px #333;
+    height: 8vh;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 ul, li {
     list-style-type: none;
+    margin: .5em;
 }
 /*hide burger*/
 #x1, #close, #first, #second, #third {
@@ -36,7 +41,7 @@ ul, li {
     position: fixed; /* Stay in place */
     z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
-    background-color: #222; /* Black*/
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     overflow: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in the nav */
 }
@@ -53,14 +58,14 @@ nav ul {
 .topnav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 32px;
+    color: #94a5b7;
     display: block;
     transition: 0.3s;
 }
 /* When you mouse over the navigation links, change their color */
 .topnav a:hover {
-    color: #f1f1f1;
+    color: white;
 }
 /* On smaller screens, where height is less than 450px, change the style of the nav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -77,30 +82,30 @@ nav ul {
 .slide {
     height: 100vh;
     width: 100vw;
-    padding-top: 6vw;
+    padding-top: 6vh;
+    background-image: linear-gradient(120deg, #485563 0%, #29323c 100%);
 }
 /*page home*/
 div.home {
-background-color: #444;
-}
-div.profile-img {
-    background: url("../img/pic3.jpg") no-repeat center center;
-    width: 50vw;
-    height: 100vh;
-    float: left;
+font-size: 1.4em;
 }
 div.intro {
     float: right;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
 }
 .greetings {
     position: absolute;
-    top: 20vh;
-    color: whitesmoke;
-    font: 1em sans-serif;
+    top: 18vh;
     text-align: center;
     width: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.greetings img {
+    width: 18vh;
 }
 .social {
     width: inherit;
@@ -115,17 +120,36 @@ div.intro {
     font-size: 3vh;
     margin: 1em;
 }
+/*social icons*/
+i {
+    transition: ease-in-out .2s;
+}
+i.fa-linkedin:hover {
+    color: #0077B5;
+}
+i.fa-facebook:hover {
+    color: #3b5998;	
+}
+i.fa-instagram:hover {
+    color: #cd486b;
+}
+i.fa-envelope:hover {
+    color: #cc0000;
+}
+.content {
+    margin: 0 10vw;
+}
 /*page about*/
 div.about {
-    background-color: #444;
+    
 }
 /*page portfolio*/
 div.portfolio {
-    background-color: #444;
+
 }
 /*page contact*/
 div.contact {
-    background-color: #444;
+
 }
 /* slick button */
 .slick-prev, .slick-next {
@@ -134,21 +158,21 @@ div.contact {
     z-index: 2;
     position: fixed;
     background-color: transparent;
-    border: none;
     color: white;
     display: inline-block;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     -webkit-transition-duration: 0.3s; /* Safari */
     transition-duration: 0.3s;
     cursor: pointer;
+    border: none;
 }
 .slick-prev {
-    top: calc(50vh - 3vw);
+    top: calc(50vh - 4vh);
     left: 0;
 }   
 .slick-next {
-    top: calc(50vh - 3vw);
+    top: calc(50vh - 4vh);
     right: 0;
 }
 .slick-next:hover, .slick-prev:hover {

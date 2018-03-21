@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -42,14 +42,15 @@
             <section>
                 <nav id="js-nav" class="topnav">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="svg">
-                    <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" stroke="white" fill="white">
+                    <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" 
+                    fill="white">
                         <path id="two" d="M14,41.4c-0.5-0.5-0.7-0.8-0.7-1c0-0.5,0.2-0.7,0.7-0.7c0.5-0.5,1.5-0.9,3.1-1.4c0.5-0.2,0.8-0.3,1-0.3
                             c2.1-0.7,3.7-0.5,4.8,0.7c1.4,0.9,2.6,2.3,3.8,4.1c1.1,1.6,1.4,3.1,0.7,4.5c-0.5,1.4-0.9,2.2-1.4,2.4c-0.9,0-2.3-0.8-4.1-2.4
                             c-1.1-0.9-2.5-1.9-4.1-3.1c-0.2-0.2-0.5-0.3-0.7-0.3c-0.2-0.2-0.7-0.7-1.4-1.4C15,42,14.5,41.6,14,41.4z"/>
@@ -97,12 +98,11 @@
             </section>
             <div class="carousel">
                 <div class="home slide">
-                    <div class="profile-img"></div>
                     <div class="intro" id="particles-js">
                         <div class="greetings">
+                            <img src="img/profile_pic.jpg" alt="profile_pic">
                             <h1>Hi, I'm Mike.</h1>
                             <h2>Thanks for finding me.</h2>
-                            <br>
                             <ul>
                                 <li>A graduate student at Boston University</li>
                                 <li>A web designer and developer</li>
@@ -114,105 +114,81 @@
                             <a href="https://linkedin.com/in/mike-pan" target="_blank"><i class="fa fa-linkedin"></i></a>
                             <a href="https://www.facebook.com/Mike.Zhenghao.Pan" target="_blank"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.instagram.com/mattinoff/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="mailto:zhpan@bu.edu" target="_blank"><i class="fa fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="about slide">
-                    <table cellspacing="15" cellpadding="15">
-                        <tr>
-                            <th colspan="3">
-                                <img src="profile_pic.jpg" alt="profile_pic">
-                            </th>
-                        </tr>
-                        <tr>
-                            <td colspan="3" align="center">
-                                <h1>Mike Pan</h1>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right" width="50%"><a href="resume_pan.html" target="_blank">Résumé</a></td>
-                            <td>|</td>
-                            <td align="left" width="50%"><a href="https://mikepan.xyz" target="_blank">mikepan.xyz</a></td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
+                    <div class="content">
+                        <div class="aboutme">
+                            <h1>About me</h1>
+                            <div class="link">
+                                <a href="assets/resume_pan.pdf">View my résumé</a>
+                                <a href="mailto:zhpan@bu.edu">Email me</a>
+                            </div>
+                        </div>
+                        <div class="texts">
+                            <div class="brick">
                                 <h3>Who I am</h3>
                                 <p>
-                                    My name is Zhenghao &quot;Mike&quot; Pan. I am studying Master of Emerging Media Studies at Boston University. In my graduate study, I took classes such as Design &amp; Interactive Experiences, Web Application Development, Design &amp; New Media, etc,  and have gained knowledge and experience in web development. I have a good command of HTML, CSS, JavaScript and other different kinds of web development tools. I hand-coded a <a href="https://wearther-bu.firebaseapp.com" target="_blank">web application</a> from scratch with a partner as a final project for the web design course which was commented &quot;one of the best in the class&quot; by the professor. In addition, I am doing a website redesign for a local gym with a few team members in order to help it to attract more customers.
+                                    My name is Zhenghao &quot;Mike&quot; Pan. I am studying Master of Emerging Media Studies at <span id="bu">Boston University</span>. In my graduate study, I took classes such as Design &amp; Interactive Experiences, Web Application Development, Design &amp; New Media, etc,  and have gained knowledge and experience in web development. I have a good command of HTML, CSS, JavaScript and other different kinds of web development tools. I hand-coded a <a href="https://wearther-bu.firebaseapp.com" target="_blank">web application</a> from scratch with a partner as a final project for the web design course which was commented &quot;one of the best in the class&quot; by the professor. In addition, I am doing a website redesign for a local gym with a few team members in order to help it to attract more customers.
                                 </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
+                            </div>
+                            <div class="brick">
                                 <h3>What I did</h3>
                                 <p>
-                                    In Junior year of college, I did an account executive internship at Wunderman Shanghai, a digital advertising agency, and was exposed to the entire process of several successful online and mobile campaigns. I was inspired by how the web can do so much things with so much power. I am set to use creativity, coding language and graphic design mindset to create user-friendly web pages for companies to express the information in a more effective way.
+                                    In Junior year of college, I did an account executive internship at <span id="wunderman">Wunderman Shanghai</span>, a digital advertising agency, and was exposed to the entire process of several successful online and mobile campaigns. I was inspired by how the web can do so much things with so much power. I am set to use creativity, coding language and graphic design mindset to create user-friendly web pages for companies to express the information in a more effective way.
                                 </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
+                            </div>
+                            <div class="brick">
                                 <h3>What I enjoy</h3>
                                 <p>
                                     I enthuse in using web to achieve goals and writing clean, elegant codes per industry standards and seek to improve himself through my hard work. A consistent willingness to learn, a can-do attitude, and strong interpersonal ability makes me a passionate, creative asset that will bring value to any company. If you would like to learn more about my passion and experience, please contact via email <a href="mailto:zhpan@bu.edu" target="_blank">zhpan@bu.edu</a>.
                                 </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <br>
-                                <hr>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">
-                                <a href="https://linkedin.com/in/mike-pan" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </td>
-                            <td align="center">
-                                <a href="https://www.facebook.com/Mike.Zhenghao.Pan" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </td>
-                            <td align="left">
-                                <a href="https://www.instagram.com/mattinoff/" target="_blank"><i class="fa fa-instagram"></i></a>
-                            </td>
-                        </tr>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio slide">
-                    <h1>Portfolio</h1>
-                    <div class="projects">
-                        <figure>
-                            <img src="" alt="" class="thumbnail">
-                            <p class="desc"></p>
-                        </figure>
-                        <figure>
-                            <img src="" alt="" class="thumbnail">
-                            <p class="desc"></p>
-                        </figure>
-                        <figure>
-                            <img src="" alt="" class="thumbnail">
-                            <p class="desc"></p>
-                        </figure>
-                        <figure>
-                            <img src="" alt="" class="thumbnail">
-                            <p class="desc"></p>
-                        </figure>
+                    <div class="content">
+                        <h1>Portfolio</h1>
+                        <div class="projects">
+                            <figure>
+                                <img src="" alt="" class="thumbnail">
+                                <p class="desc"></p>
+                            </figure>
+                            <figure>
+                                <img src="" alt="" class="thumbnail">
+                                <p class="desc"></p>
+                            </figure>
+                            <figure>
+                                <img src="" alt="" class="thumbnail">
+                                <p class="desc"></p>
+                            </figure>
+                            <figure>
+                                <img src="" alt="" class="thumbnail">
+                                <p class="desc"></p>
+                            </figure>
+                        </div>
                     </div>
                 </div>
                 <div class="contact slide">
-                    <h1>Conttact</h1>
-                    <div class="container">
-                        <form action="action_page.php">  
-                            <label for="fname">Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <div class="content">
+                        <h1>Conttact</h1>
+                        <div class="container">
+                            <form action="action_page.php">  
+                                <label for="fname">Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                            <label for="lname">Email</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your email..">
-                          
-                            <label for="subject">Message</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                          
-                            <input type="submit" value="Submit">
-                        </form>
+                                <label for="lname">Email</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your email..">
+                            
+                                <label for="subject">Message</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

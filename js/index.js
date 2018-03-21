@@ -5,8 +5,8 @@ $("document").ready(function() {
 
     //carousel buttons
     $(".slick-next").insertBefore( $(".slick-list") );
-    $(".slick-prev").html("<");
-    $(".slick-next").html(">");
+    $(".slick-prev").html("<i class='fa fa-angle-left'></i>");
+    $(".slick-next").html("<i class='fa fa-angle-right'></i>");
     //navigation
 
     var openNav = function() {
@@ -85,5 +85,6 @@ $("document").ready(function() {
     particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
         console.log('callback - particles.js config loaded');
     });
+
 });
 

@@ -10,8 +10,8 @@ $("document").ready(function() {
     //navigation
 
     var openNav = function() {
-        $("#js-nav").css("height", "calc(100vh - 6vw)");
-        $("#logo").css("margin-top", "calc(100vh - 6vw)");
+        $("#js-nav").css("height", "calc(100vh - 8vh)");
+        $("#logo").css("margin-top", "calc(100vh - 8vh)");
     }
 
     var closeNav = function() {
@@ -86,5 +86,17 @@ $("document").ready(function() {
         console.log('callback - particles.js config loaded');
     });
 
+    //responsive
+    var responsive = function() {
+        if (window.matchMedia("(max-width: 460px)").matches) {
+            /* the viewport is below 460 pixels wide */
+
+          }
+        else {
+
+        }
+    }
+    responsive();
+    $(window).resize(responsive);
 });
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Lato|Ubuntu');
 
 * {
     margin: 0;
@@ -14,6 +14,10 @@
 }
 a {
     text-decoration: none;
+}
+p,
+ul li {
+    font-family: 'Lato', sans-serif;
 }
 img{
     border-radius: 50%;

@@ -1,7 +1,11 @@
 $("document").ready(function() {
 
     //full-page carousel
-    $(".carousel").slick();
+    $(".carousel").slick({
+        speed: 500,
+        cssEase: "ease-in-out",
+        easing: "ease-in-out"
+      });
 
     //carousel buttons
     $(".slick-next").insertBefore( $(".slick-list") );
@@ -17,6 +21,11 @@ $("document").ready(function() {
     var closeNav = function() {
         $("#js-nav").css("height", "0");
         $("#logo").css("margin-top", "0");
+        //$("#p").html("burger");
+        $("#one, #two, #three").fadeIn();
+        //close1.reverse();
+        KUTE.to("#close", { path: closeString }, {duration: 300}).start();
+        
     }
     //kute.js defaults
     KUTE.defaultOptions = {
@@ -28,7 +37,7 @@ $("document").ready(function() {
         keepHex: false,
         morphPrecision: 1, // SVG Plugin only
     };
-    //morph animation
+    //morph animation using KUTE.js
     var stroke1 = KUTE.to("#one", { path: "#first" }, {duration: 200});
     var stroke2 = KUTE.to("#two", { path: "#second" }, {duration: 300});
     var stroke3 = KUTE.to("#three", { path: "#third" }, {duration: 400});
@@ -38,7 +47,6 @@ $("document").ready(function() {
     var twoString = $("#two").attr("d");
     var threeString = $("#three").attr("d");
     var closeString = $("#close").attr("d");
-    //$("#p").html(oneString);
 
     $("#logo").hover(function() {
         $("#zero").fadeOut(300);
@@ -51,11 +59,11 @@ $("document").ready(function() {
             $("#close").css("visibility", "hidden");
         }
         //stroke1.reverse();
-        KUTE.to("#one", { path: oneString }).start();
+        KUTE.to("#one", { path: oneString }, {duration: 450}).start();
         //stroke2.reverse();
-        KUTE.to("#two", { path: twoString }).start();
+        KUTE.to("#two", { path: twoString }, {duration: 450}).start();
         //stroke3.reverse();
-        KUTE.to("#three", { path: threeString }).start();
+        KUTE.to("#three", { path: threeString }, {duration: 450}).start();
     });
 
     //burger animation
@@ -73,10 +81,6 @@ $("document").ready(function() {
             openNav();
         }
         else {
-            //$("#p").html("burger");
-            $("#one, #two, #three").fadeIn();
-            //close1.reverse();
-            KUTE.to("#close", { path: closeString }, {duration: 300}).start();
             closeNav();
         }
     });
@@ -86,17 +90,16 @@ $("document").ready(function() {
         console.log('callback - particles.js config loaded');
     });
 
-    //responsive
-    var responsive = function() {
-        if (window.matchMedia("(max-width: 460px)").matches) {
-            /* the viewport is below 460 pixels wide */
-
-          }
-        else {
-
-        }
-    }
-    responsive();
-    $(window).resize(responsive);
+    //navigation
+    $('a[data-slide]').click( function() {
+        //close nav bar
+        open = !open;
+        $("#zero").fadeIn(300);
+        $("#close").css("visibility", "hidden");
+        closeNav();
+        //navigate to page
+        var slideIndex = $(this).data("slide");
+        $( '.carousel' ).slick('slickGoTo', slideIndex-1);
+      });
 });
 

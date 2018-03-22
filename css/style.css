@@ -166,8 +166,8 @@ div.texts {
     padding-top: 1%;
 }
 div.img {
-    width: 12vw;
-    height: 12vw;
+    width: 16vh;
+    height: 16vh;
     background-position: top center;
     background-size: cover;
     border-radius: 50%;
@@ -285,6 +285,8 @@ h3 {
     }
     div.img {
         float: left;
+        width: 12vw;
+        height: 12vw;
     }
     div.img+div {
         width: 80%;
@@ -304,7 +306,7 @@ h3 {
     div.link {
         width: inherit;
         position: absolute;
-        bottom: 8vh;
+        bottom: 12vh;
     }
     .block p {
         font-size: .5em;

@@ -4,7 +4,21 @@ $("document").ready(function() {
     $(".carousel").slick({
         speed: 500,
         cssEase: "ease-in-out",
-        easing: "ease-in-out"
+        easing: "ease-in-out",
+        responsive: [{
+
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                infinite: true
+            }
+
+            }, {
+
+            breakpoint: 460,
+            settings: "unslick" // destroys slick
+
+            }]
       })
 	    .on('wheel', function(e) {
 			e.preventDefault();

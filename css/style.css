@@ -339,9 +339,25 @@ h3 {
         font-size: .88em;
     }
     div.link {
-        bottom: 4vh;
+        position: unset;
+        margin-top: 1.5vh;
     }
     .block p {
-        font-size: 11px;
+        font-size: 10px;
+    }
+    .carousel {
+    height: unset;
+    display: flex;
+    flex-flow: column nowrap;
+    position: unset;
+    overflow-y: hidden;
+    }
+    .slide {
+        height: 90vh;
+        padding-top: 0;
+    }
+    a.btn {
+        padding: .5em;
+        font-size: smaller;
     }
 }

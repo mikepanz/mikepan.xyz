@@ -5,7 +5,16 @@ $("document").ready(function() {
         speed: 500,
         cssEase: "ease-in-out",
         easing: "ease-in-out"
-      });
+      })
+	    .on('wheel', function(e) {
+			e.preventDefault();
+			if (e.originalEvent.deltaY > 0) {
+				$(this).slick('slickNext');
+			}
+			else {
+				$(this).slick('slickPrev');
+			}
+	});
 
     //carousel buttons
     $(".slick-next").insertBefore( $(".slick-list") );

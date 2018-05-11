@@ -20,15 +20,16 @@ $("document").ready(function() {
 
             }]
       })
-	    .on('wheel', function(e) {
-			e.preventDefault();
-			if (e.originalEvent.deltaY > 0) {
-				$(this).slick('slickNext');
-			}
-			else {
-				$(this).slick('slickPrev');
-			}
-	});
+//	    .on('wheel', function(e) {
+//			e.preventDefault();
+//			if (e.originalEvent.deltaY > 0) {
+//				$(this).slick('slickNext');
+//			}
+//			else {
+//				$(this).slick('slickPrev');
+//			}
+//    })
+    ;
 
     //carousel buttons
     $(".slick-next").insertBefore( $(".slick-list") );

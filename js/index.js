@@ -31,6 +31,16 @@ $("document").ready(function() {
 //    })
     ;
 
+    //arrow key
+    $(document).on('keydown', function(e) {
+        if(e.keyCode == 37) {
+            $(".carousel").slick('slickPrev');
+        }
+        if(e.keyCode == 39) {
+            $(".carousel").slick('slickNext');
+        }
+    });
+
     //carousel buttons
     $(".slick-next").insertBefore( $(".slick-list") );
     $(".slick-prev").html("<i class='fa fa-angle-left'></i>");
